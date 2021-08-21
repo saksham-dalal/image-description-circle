@@ -1,0 +1,50 @@
+body {
+  background: black;
+}
+
+.container {
+  width: 288px;
+  height: 288px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 1s ease-in;
+}
+
+.content {
+  position: absolute;
+  color: aliceblue;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background: orangered;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+p {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+  font-weight: bolder;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container:hover img {
+  transform: rotate(220deg);
+  transform-origin: 3% 50%;
+}
